@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="taglibs-standard-impl-1.2.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Componentes/taglibs-standard-impl-1.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Componentes/taglibs-standard-spec-1.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Componentes/apache-tomcat-8.5.78.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/Componentes/apache-tomcat-8.5.78.zip!/apache-tomcat-8.5.78/webapps/docs/appdev/sample/src" />
+      <root url="jar://$PROJECT_DIR$/Componentes/apache-tomcat-8.5.78.zip!/apache-tomcat-8.5.78/webapps/examples/WEB-INF/classes" />
+      <root url="jar://$PROJECT_DIR$/Componentes/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/compat/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/Componentes/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/impl/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/Componentes/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/impl/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/Componentes/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/jstlel/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/Componentes/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/jstlel/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/Componentes/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/spec/src/main/java" />
+      <root url="jar://$PROJECT_DIR$/Componentes/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/spec/src/test/java" />
+      <root url="jar://$PROJECT_DIR$/Componentes/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/standard-test/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
