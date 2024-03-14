@@ -1,5 +1,6 @@
 package org.aires.model;
 import javax.persistence.*;
+import java.util.Date;
 import java.util.Objects;
 
 @Entity //Declarar para Framework
@@ -10,8 +11,9 @@ public class Pessoa {
 
 	private int id;
 	private String nome;
-	private String cpf;
-	
+	private Date idade;
+	private String sexo;
+
 	//Entidade UM PARA UM
 	@OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
 	private Endereco endereco = new Endereco();
@@ -28,13 +30,18 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getCpf() {
-		return cpf;
+	public Date getIdade() {
+		return idade;
 	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+	public void setIdade(Date idade) {
+		this.idade = idade;
 	}
-	
+	public String getSexo() {
+		return sexo;
+	}
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
 
 	public Endereco getEndereco() {
 		return endereco;

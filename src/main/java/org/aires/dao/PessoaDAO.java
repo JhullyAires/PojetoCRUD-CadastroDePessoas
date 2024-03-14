@@ -11,10 +11,8 @@ import java.util.List;
 
 public class PessoaDAO {
 
-	EntityManagerFactory sf = Persistence.createEntityManagerFactory("EmpresaGames");
-
+	EntityManagerFactory sf = Persistence.createEntityManagerFactory("CadastroPessoa");
 	EntityManager em2 = sf.createEntityManager();
-
 
 	private List<Pessoa> todos= new ArrayList<Pessoa>();
 
@@ -22,7 +20,6 @@ public class PessoaDAO {
 	public List<Pessoa> getTodasPessoas() {
 		return em2.createQuery("From Pessoa").getResultList();
 	}
-
 	public void setTodasPessoas(List<Pessoa> todos) {
 		this.todos = todos;
 	}
@@ -33,7 +30,6 @@ public class PessoaDAO {
 	public Pessoa getPessoaId() {
 		return em2.find(Pessoa.class, pessoaId.getId());
 	}
-
 	@SuppressWarnings("static-access")
 	public void setPessoaId(Pessoa pessoaId) {
 		this.pessoaId = pessoaId;
@@ -42,7 +38,6 @@ public class PessoaDAO {
 	public Pessoa getPessoa() {
 		return pessoa;
 	}
-
 	public void setPessoa(Pessoa pessoa) {
 		this.pessoa = pessoa;
 	}
@@ -57,7 +52,8 @@ public class PessoaDAO {
 		em2.getTransaction().begin();
 
 		pessoa.setNome(pessoa.getNome());
-		pessoa.setCpf(pessoa.getCpf());
+		pessoa.setIdade(pessoa.getIdade());
+		pessoa.setSexo(pessoa.getSexo());
 
 		pessoa.getEndereco().setLogradouro(pessoa.getEndereco().getLogradouro());
 		pessoa.getEndereco().setCidade(pessoa.getEndereco().getCidade());
@@ -106,7 +102,8 @@ public class PessoaDAO {
 				pessoa = em2.find(Pessoa.class, pessoa.getId());
 
 				pessoa.setNome(pessoa.getNome());
-				pessoa.setCpf(pessoa.getCpf());
+				pessoa.setIdade(pessoa.getIdade());
+				pessoa.setSexo(pessoa.getSexo());
 
 				pessoa.getEndereco().setLogradouro(pessoa.getEndereco().getLogradouro());
 				pessoa.getEndereco().setCidade(pessoa.getEndereco().getCidade());
@@ -148,7 +145,7 @@ public class PessoaDAO {
 		int quant = em2.createQuery("Delete From Pessoa").executeUpdate();
 		em2.getTransaction().commit();
 		System.out.println("Quantidade de Pessoas Removidas: " + quant);
-		System.out.println("Pessoas Removidos com Sucesso!\n");
+		System.out.println("Pessoas Removidas com Sucesso!\n");
 	}
 
 }
