@@ -9,7 +9,13 @@
 banco-pessoas.sql
 ```
 
-=> Basta criar o banco com nome que quiser, colar os comandos que esstão no arquivo e testar a aplicação.
+### Ou no site:
+
+```
+https://github.com/JhullyAires/PojetoCRUD-CadastroDePessoas/blob/master/banco-pessoas.sql
+```
+
+==> Basta criar o banco com nome que quiser, clicar nele e depois em na opção 'query tool', e então colar os comandos que esstão no arquivo e testar a aplicação.
 
 ## Para executar o Programa:
 Será necessário para o server o Apache Tomcat v8.5, que pode encontrar para download em:
@@ -18,7 +24,7 @@ https://tomcat.apache.org/download-80.cgi
 ```
 
 Após adicionar o apache, caso esteja no eclipse, clicar no primeiro botão verde de play do menu superior e pesquisar 
-no navegar:
+no navegador:
 
 ```
     http://localhost:8080
@@ -26,4 +32,5 @@ no navegar:
 
 #### Projeto no github:
 ```
+https://github.com/JhullyAires/PojetoCRUD-CadastroDePessoas
 ```
